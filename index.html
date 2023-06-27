@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE APP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js"
+        integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="card">
+            <div class="inner-card">
+                <div class="card-front">
+                    <h1>QR CODE GENERATOR</h1>
+                    <p>Generate QR code</p>
+                    <input type="text" placeholder="Input Text or URL">
+                    <button>GENERATE</button>
+                    <div class="Qr-card">
+                        <img src="">
+                    </div>
+                    <p class="qr-scanner">Scan QR code <span class="arrow"> &rarr;</span></p>
+                </div>
+                <div class="card-back">
+                    <div id="reader"></div>
+                    <div id="result"></div>
+                    <p class="qr-scanner2">Generate QR code<span class="arrow"> &rarr;</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
