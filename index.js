@@ -19,7 +19,7 @@ btn.addEventListener('click', (e) => {
       qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`;
       qrCard.classList.add('active');
       btn.innerText = 'GENERATE'
-    }, 4000);
+    }, 2000);
     
     qrText.value = '';
   } else {
